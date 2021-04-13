@@ -56,5 +56,3 @@ services:
       PMA_ARBITRARY: "1"
     ports:
       - 9999:80
-  redis-commander:
-    build: https://github.com/jptafe/wp-cli-docker
