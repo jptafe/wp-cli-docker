@@ -17,8 +17,17 @@ cp env_example .env
 docker-compose up
 ```
 
+### Access
+http://localhost:8080 - WordPress instance executing with inbuilt PHP webserver
+http://localhsot:9999 - PHPMyAdmin interface to manually inspect Database
+
+### Modification
+edit ./scripts/wp_container_start.sh to add extra wp-cli features, such as the downloading and enabling of modules and themes.  
+
 ### export 
 ```
 ./scripts/wp_container_export.sh 
 ```
 Exports both database and wp-content files out of their respective RUNNING containers, to be pushed up to a private repository as backup.
+
+[![Try in PWD](https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/jptafe/wp-cli-docker/main/docker-compose.yml)
